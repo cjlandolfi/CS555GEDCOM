@@ -1,7 +1,9 @@
 from prettytable import PrettyTable
 from datetime import datetime, date
+import csv
 
-GEDCOM = open("proj02test.ged", "r")
+file = input("Please give name of the GEDCOM file to be analyized: ")
+GEDCOM = open(file, "r")
 
 Key = {
     '0':['HEAD','TRLR','NOTE'],
@@ -223,9 +225,3 @@ for key in FamDict:
     famTable.add_row([key, FamDict[key].married, FamDict[key].divorce, FamDict[key].husbandId, FamDict[key].husbandName, FamDict[key].wifeId, FamDict[key].wifeName, FamDict[key].children])
 
 #Outputting the Table Data for Individuals/Families
-print('Individuals')
-print(indiTable)
-print('\n')
-print('Families')
-print(famTable)
-print('\n')
