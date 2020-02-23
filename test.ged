@@ -1,0 +1,222 @@
+0 NOTE Christopher Landolfi
+0 HEAD
+1 SOUR Family Echo
+2 WWW http://www.familyecho.com/
+1 FILE My Family
+1 DATE 26 JAN 2020
+1 DEST ANSTFILE
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 SUBM @I1@
+2 NAME Christopher Landolfi
+1 SUBN
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Christopher /Landolfi/
+2 GIVN Christopher
+2 SURN Landolfi
+2 _MARNM Landolfi
+1 SEX M
+1 BIRT
+2 DATE 2 MAR 1997
+1 FAMC @F1@
+0 @I2@ INDI
+1 NAME Christopher /Landolfi/
+2 GIVN Christopher
+2 SURN Landolfi
+2 _MARNM Landolfi
+1 SEX M
+1 BIRT
+2 DATE 26 JUL 1967
+1 FAMS @F1@
+1 FAMC @F2@
+0 @I3@ INDI
+1 NAME Doreen /Oliva/
+2 GIVN Doreen
+2 SURN Oliva
+2 _MARNM Landolfi
+1 SEX F
+1 BIRT
+2 DATE 17 FEB 1969
+1 FAMS @F1@
+1 FAMC @F3@
+0 @I4@ INDI
+1 NAME Dominick /Landolfi/
+2 GIVN Dominick
+2 SURN Landolfi
+2 _MARNM Landolfi
+1 SEX M
+1 BIRT
+2 DATE 17 AUG 1999
+1 FAMC @F1@
+0 @I5@ INDI
+1 NAME Michael /Landolfi/
+2 GIVN Michael
+2 SURN Landolfi
+2 _MARNM Landolfi
+1 SEX M
+1 BIRT
+2 DATE 24 MAY 2002
+1 FAMC @F1@
+0 @I6@ INDI
+1 NAME Joseph /Oliva/
+2 GIVN Joseph
+2 SURN Oliva
+2 _MARNM Oliva
+1 SEX M
+1 BIRT
+2 DATE 9 FEB 1942
+1 FAMS @F3@
+0 @I7@ INDI
+1 NAME Mary /Abram/
+2 GIVN Mary
+2 SURN Abram
+2 _MARNM Oliva
+1 SEX F
+1 BIRT
+2 DATE 15 FEB 1944
+1 FAMS @F3@
+0 @I8@ INDI
+1 NAME Joseph /Oliva/
+2 GIVN Joseph
+2 SURN Oliva
+2 _MARNM Oliva
+1 SEX M
+1 BIRT
+2 DATE 7 FEB 1800
+1 FAMC @F3@
+0 @I9@ INDI
+1 NAME Michael /Oliva/
+2 GIVN Michael
+2 SURN Oliva
+2 _MARNM Oliva
+1 SEX M
+1 BIRT
+2 DATE 19 FEB 1971
+1 FAMC @F3@
+0 @I10@ INDI
+1 NAME Donna /Oliva/
+2 GIVN Donna
+2 SURN Oliva
+2 _MARNM Smith
+1 SEX F
+1 BIRT
+2 DATE 22 SEP 1967
+1 FAMC @F3@
+0 @I11@ INDI
+1 NAME Fred /Landolfi/
+2 GIVN Fred
+2 SURN Landolfi
+2 _MARNM Landolfi
+1 SEX M
+1 BIRT
+2 DATE 9 SEP 1940
+1 DEAT Y
+2 DATE 22 APR 2019
+1 FAMS @F2@
+1 FAMS @F4@
+0 @I12@ INDI
+1 NAME Sandra /Landolfi/
+2 GIVN Sandra
+2 SURN Landolfi
+2 _MARNM Landolfi
+1 SEX F
+1 BIRT
+2 DATE 15 JUN 1945
+1 DEAT Y
+2 DATE 11 NOV 2012
+1 FAMS @F2@
+0 @I13@ INDI
+1 NAME Susan /Connolley/
+2 GIVN Susan
+2 SURN Connolley
+2 _MARNM Landolfi
+1 SEX F
+1 BIRT
+2 DATE 8 MAR 1946
+1 DEAT Y
+2 DATE 7 JUN 2017
+1 FAMS @F4@
+1 FAMS @F5@
+0 @I14@ INDI
+1 NAME Larry /Landolfi/
+2 GIVN Larry
+2 SURN Landolfi
+2 _MARNM Landolfi
+1 SEX M
+1 BIRT
+2 DATE 9 JAN 1962
+1 FAMC @F2@
+0 @I15@ INDI
+1 NAME Lynne /Landolfi/
+2 GIVN Lynne
+2 SURN Landolfi
+2 _MARNM Farrah
+1 SEX F
+1 BIRT
+2 DATE 18 AUG 1964
+1 FAMC @F2@
+0 @I16@ INDI
+1 NAME Tony /Landolfi/
+2 GIVN Tony
+2 SURN Landolfi
+2 _MARNM Landolfi
+1 SEX M
+1 BIRT
+2 DATE 6 SEP 1966
+1 FAMC @F2@
+0 @I17@ INDI
+1 NAME Joesph /Landolfi/
+2 GIVN Joesph
+2 SURN Landolfi
+2 _MARNM Landolfi
+1 SEX M
+1 BIRT
+2 DATE 11 APR 1970
+1 FAMC @F2@
+0 @I18@ INDI
+1 NAME Adam /Connelley/
+2 GIVN Adam
+2 SURN Connelley
+2 _MARNM Connelley
+1 SEX M
+1 BIRT
+2 DATE 12 APR 1964
+1 FAMC @F5@
+0 @F1@ FAM
+1 HUSB @I2@
+1 WIFE @I3@
+1 CHIL @I1@
+1 CHIL @I4@
+1 CHIL @I5@
+1 _CURRENT Y
+0 @F2@ FAM
+1 HUSB @I11@
+1 WIFE @I12@
+1 CHIL @I2@
+1 CHIL @I14@
+1 CHIL @I15@
+1 CHIL @I16@
+1 CHIL @I17@
+1 MARR
+2 DATE 10 AUG 1955
+1 DIV
+2 DATE 13 OCT 1974
+1 _CURRENT N
+0 @F3@ FAM
+1 HUSB @I6@
+1 WIFE @I7@
+1 CHIL @I3@
+1 CHIL @I8@
+1 CHIL @I9@
+1 CHIL @I10@
+1 _CURRENT Y
+0 @F4@ FAM
+1 HUSB @I11@
+1 WIFE @I13@
+1 _CURRENT Y
+0 @F5@ FAM
+1 WIFE @I13@
+1 CHIL @I18@
+0 TRLR
