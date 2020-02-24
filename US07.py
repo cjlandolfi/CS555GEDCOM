@@ -1,6 +1,7 @@
-import Parser as Parser
-from Parser import IndiDict
+from Parser import FamDict,IndiDict
 
-for person in IndiDict:
+def US07(person):
     if IndiDict[person].age > 150:
-        print("US07 Error for " + IndiDict[person].name)
+        return True
+    else:
+        return False

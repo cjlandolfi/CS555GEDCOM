@@ -3,26 +3,28 @@ from Parser import FamDict,IndiDict
 from datetime import datetime, date
 
 #US04: Marriage should occur before divorce of spouses, and divorce can only occur after marriage
-for family in FamDict:
-    if (FamDict[family].married != 'N/A' and FamDict[family].divorce != 'N/A'):
-        mardate = datetime.strptime(FamDict[family].married, '%d %b %Y')
-        divdate = datetime.strptime(FamDict[family].divorce, '%d %b %Y')
-        if (divdate < mardate):
-            print("US04 Error for Family: " + str(FamDict[family].id))
-    if (FamDict[family].married == 'N/A' and FamDict[family].divorce != 'N/A'):
-            print("US04 Error for Family: " + str(FamDict[family].id))
+# for family in FamDict:
+#     if (FamDict[family].married != 'N/A' and FamDict[family].divorce != 'N/A'):
+#         mardate = datetime.strptime(FamDict[family].married, '%d %b %Y')
+#         divdate = datetime.strptime(FamDict[family].divorce, '%d %b %Y')
+#         if (divdate < mardate):
+#             print("US04 Error for Family: " + str(FamDict[family].id))
+#     if (FamDict[family].married == 'N/A' and FamDict[family].divorce != 'N/A'):
+#             print("US04 Error for Family: " + str(FamDict[family].id))
 
 
 #ALTERNATE VERSION
-# def US04(fam):
-#     if(FamDict[fam].married != 'N/A' and FamDict[fam].divorce != 'N/A'):
-#         mardate = datetime.strptime(FamDict[fam].married, '%d %b %Y')
-#         divdate = datetime.strptime(FamDict[fam].divorce, '%d %b %Y')
-#         if (divdate < mardate):
-#             return False  
-#     if(FamDict[fam].married == 'N/A' and FamDict[fam].divorce != 'N/A'):
-#             return False
-#     return True
+def US04(fam):
+    if (FamDict[fam].husbandId == 'N/A' or FamDict[fam].wifeId == 'N/A'):
+        return False
+    if(FamDict[fam].married != 'N/A' and FamDict[fam].divorce != 'N/A'):
+        mardate = datetime.strptime(FamDict[fam].married, '%d %b %Y')
+        divdate = datetime.strptime(FamDict[fam].divorce, '%d %b %Y')
+        if (divdate < mardate):
+            return True  
+    if(FamDict[fam].married == 'N/A' and FamDict[fam].divorce != 'N/A'):
+            return True
+    return False
 
 #Running the alternate version through the entire file
 # for fam in FamDict:
