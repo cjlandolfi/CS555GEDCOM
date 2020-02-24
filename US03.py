@@ -3,7 +3,6 @@ from Parser import FamDict,IndiDict
 from datetime import datetime, date
 
 for person in IndiDict:
-	print(person.alive)
 	if not IndiDict[person].alive:
 		birthDate = datetime.strptime(IndiDict[person].dob, '%d %b %Y')
 		deathDate = datetime.strptime(IndiDict[person].death, '%d %b %Y')

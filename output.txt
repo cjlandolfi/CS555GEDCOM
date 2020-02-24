@@ -1,0 +1,37 @@
+Individuals
++-------+------------------------+--------+-------------+-----+-------+-------------+-------+------------------+
+|   ID  |          Name          | Gender |     DOB     | Age | Alive |    Death    | Child |      Spouse      |
++-------+------------------------+--------+-------------+-----+-------+-------------+-------+------------------+
+|  @I7@ |      Mary /Abram/      |   F    | 15 FEB 1944 |  76 |  True |     N/A     |  N/A  |     ['@F3@']     |
+| @I12@ |   Sandra /Landolfi/    |   F    | 15 JUN 1945 |  67 | False | 11 NOV 2012 |  N/A  |     ['@F2@']     |
+| @I17@ |   Joesph /Landolfi/    |   M    | 11 APR 1970 |  49 |  True |     N/A     |  @F2@ |        []        |
+|  @I6@ |     Joseph /Oliva/     |   M    |  9 FEB 1942 |  78 |  True |     N/A     |  N/A  |     ['@F3@']     |
+| @I14@ |    Larry /Landolfi/    |   M    |  9 JAN 1962 |  58 |  True |     N/A     |  @F2@ |        []        |
+|  @I5@ |   Michael /Landolfi/   |   M    | 24 MAY 2002 |  17 |  True |     N/A     |  @F1@ |        []        |
+|  @I8@ |     Joseph /Oliva/     |   M    |  7 FEB 1800 | 220 |  True |     N/A     |  @F3@ |        []        |
+| @I10@ |     Donna /Oliva/      |   F    | 22 SEP 1967 |  52 |  True |     N/A     |  @F3@ |        []        |
+| @I16@ |    Tony /Landolfi/     |   M    |  6 SEP 1966 |  53 |  True |     N/A     |  @F2@ |        []        |
+|  @I1@ | Christopher /Landolfi/ |   M    |  2 MAR 1997 |  22 |  True |     N/A     |  @F1@ |        []        |
+|  @I3@ |     Doreen /Oliva/     |   F    | 17 FEB 1969 |  51 |  True |     N/A     |  @F3@ |     ['@F1@']     |
+| @I11@ |    Fred /Landolfi/     |   M    |  9 SEP 1940 |  78 | False | 22 APR 2019 |  N/A  | ['@F2@', '@F4@'] |
+| @I18@ |    Adam /Connelley/    |   M    | 12 APR 1964 |  55 |  True |     N/A     |  @F5@ |        []        |
+|  @I4@ |  Dominick /Landolfi/   |   M    | 17 AUG 1999 |  20 |  True |     N/A     |  @F1@ |        []        |
+| @I13@ |   Susan /Connolley/    |   F    |  8 MAR 1946 |  71 | False |  7 JUN 2017 |  N/A  | ['@F4@', '@F5@'] |
+| @I15@ |    Lynne /Landolfi/    |   F    | 18 AUG 1964 |  55 |  True |     N/A     |  @F2@ |        []        |
+|  @I2@ | Christopher /Landolfi/ |   M    | 26 JUL 1967 |  52 |  True |     N/A     |  @F2@ |     ['@F1@']     |
+|  @I9@ |    Michael /Oliva/     |   M    | 19 FEB 1971 |  49 |  True |     N/A     |  @F3@ |        []        |
++-------+------------------------+--------+-------------+-----+-------+-------------+-------+------------------+
+
+
+Families
++------+-------------+-------------+------------+------------------------+---------+-------------------+----------------------------------------------+
+|  ID  |   Married   |   Divorced  | Husband ID |      Husband Name      | Wife ID |     Wife Name     |                   Children                   |
++------+-------------+-------------+------------+------------------------+---------+-------------------+----------------------------------------------+
+| @F4@ |     N/A     |     N/A     |   @I11@    |    Fred /Landolfi/     |  @I13@  | Susan /Connolley/ |                      []                      |
+| @F1@ |     N/A     |     N/A     |    @I2@    | Christopher /Landolfi/ |   @I3@  |   Doreen /Oliva/  |           ['@I1@', '@I4@', '@I5@']           |
+| @F3@ |     N/A     |     N/A     |    @I6@    |     Joseph /Oliva/     |   @I7@  |    Mary /Abram/   |      ['@I3@', '@I8@', '@I9@', '@I10@']       |
+| @F5@ |     N/A     |     N/A     |    N/A     |          N/A           |  @I13@  | Susan /Connolley/ |                  ['@I18@']                   |
+| @F2@ | 10 AUG 1955 | 13 OCT 1974 |   @I11@    |    Fred /Landolfi/     |  @I12@  | Sandra /Landolfi/ | ['@I2@', '@I14@', '@I15@', '@I16@', '@I17@'] |
++------+-------------+-------------+------------+------------------------+---------+-------------------+----------------------------------------------+
+
+
