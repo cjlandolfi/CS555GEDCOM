@@ -5,6 +5,7 @@ from US03 import US03
 from US04 import US04
 from US06 import US06
 from US07 import US07
+from US11 import US11
 from US16 import US16
 from US17 import US17
 from US21 import US21
@@ -24,6 +25,9 @@ class TestAllUserStories(unittest.TestCase):
 
     def test_US07(self):
         self.assertEqual(US07('@I8@'), True)
+
+    def test_US11(self):
+        self.assertEqual(US11('@I13@'), True)
 
     def test_US16(self):
         self.assertEqual(US16('@F1@'), True)

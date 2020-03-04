@@ -6,6 +6,7 @@ from US03 import US03
 from US04 import US04
 from US06 import US06
 from US07 import US07
+from US11 import US11
 from US16 import US16
 from US17 import US17
 from US21 import US21
@@ -56,3 +57,6 @@ for indi in IndiDict:
 
     if(US03(indi)):
         print("US03 Error for " + IndiDict[indi].name + "; Person cannot be born after their death")
+
+    if(US11(indi)):
+        print("US11 Error for " + IndiDict[indi].name + "; Person Cannot Be Married to Two People At Once")
