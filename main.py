@@ -10,6 +10,8 @@ from US11 import US11
 from US16 import US16
 from US17 import US17
 from US21 import US21
+from US10 import US10
+from US12 import US12
 
 #Import All Checks (User Stories)
 
@@ -50,6 +52,12 @@ for fam in FamDict:
     
     if(US16(fam)):
         print("US16 Annomaly for Family:" + str(FamDict[fam].id) + "; Male Last Names Within Families Match")
+
+    if(US10(fam)):
+        print("US10 Annomaly for Family:" + str(FamDict[fam].id) + "; Marriage before 14")
+        
+    if(US12(fam)):
+        print("US12 Annomaly for Family:" + str(FamDict[fam].id) + "; Parents too old")
 
 for indi in IndiDict:
     if(US07(indi)):
