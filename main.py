@@ -1,6 +1,6 @@
 import Parser as Parser #will run Parser
 from prettytable import PrettyTable
-from Parser import FamDict,IndiDict #now applicable
+from Parser import FamDict,IndiDict,ParserErrors #now applicable
 from US02 import US02
 from US03 import US03
 from US04 import US04
@@ -33,6 +33,9 @@ print('\n')
 print('Families')
 print(famTable)
 print('\n')
+
+for err in ParserErrors:
+    print(err)
 
 for fam in FamDict:
     if(US04(fam)):

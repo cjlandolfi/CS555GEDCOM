@@ -11,6 +11,7 @@ Key = {
 
 IndiDict = {} #Key = Individual ID/ Data = individual class with that ID number
 FamDict = {}
+ParserErrors = []
 
 class INDI:
     def __init__(self):
@@ -71,7 +72,7 @@ for line in GEDCOM.readlines():
 
     if words[1] in Key[words[0]]: #valid index keyword pair
         if current is None and words[0] != '0': #no indi/fam selected but info is added
-            print('Invalid GEDCOM Order')
+            continue
         if words[0] == '0': #Skips for Head, TRLR, and 'Note' tags
             if isIndi is None:
                 continue
@@ -184,35 +185,60 @@ for line in GEDCOM.readlines():
 
     elif words[0] == '0' and words[2] == 'INDI': #edge case for INDI
         if current is None:
-            current = INDI()
-            current.id = words[1]
-            IndiDict[current.id] = current
-            isIndi = True
+            if not (words[1] in IndiDict):
+                current = INDI()
+                current.id = words[1]
+                IndiDict[current.id] = current
+                isIndi = True
+            else:
+                ParserErrors.append('US22 Error: Only 1 instance of Individual ' + words[1] + ' is allowed.')
+                current = None
+                isIndi = None
         elif isIndi:
-            current = INDI()
-            current.id = words[1]
-            IndiDict[current.id] = current
-            isIndi = True
+            if not (words[1] in IndiDict):
+                current = INDI()
+                current.id = words[1]
+                IndiDict[current.id] = current
+                isIndi = True
+            else:
+                ParserErrors.append('US22 Error: Only 1 instance of Individual ' + words[1] + ' is allowed.')
+                current = None
+                isIndi = None
         else:
             print('INDI Check Error')
         continue
         
     elif words[0] == '0' and words[2] == 'FAM': #edge case for FAM
         if current is None:
-            current = FAM()
-            current.id = words[1]
-            FamDict[current.id] = current
-            isIndi = False
+            if not (words[1] in FamDict):
+                current = FAM()
+                current.id = words[1]
+                FamDict[current.id] = current
+                isIndi = False
+            else:
+                ParserErrors.append('US22 Error: Only 1 instance of Family ' + words[1] + ' is allowed.')
+                current = None
+                isIndi = None
         elif isIndi:
-            current = FAM()
-            current.id = words[1]
-            FamDict[current.id] = current
-            isIndi = False
+            if not (words[1] in FamDict):
+                current = FAM()
+                current.id = words[1]
+                FamDict[current.id] = current
+                isIndi = False
+            else:
+                ParserErrors.append('US22 Error: Only 1 instance of Family ' + words[1] + ' is allowed.')
+                current = None
+                isIndi = None
         else:
-            current = FAM()
-            current.id = words[1]
-            FamDict[current.id] = current
-            isIndi = False
+            if not (words[1] in FamDict):
+                current = FAM()
+                current.id = words[1]
+                FamDict[current.id] = current
+                isIndi = False
+            else:
+                ParserErrors.append('US22 Error: Only 1 instance of Family ' + words[1] + ' is allowed.')
+                current = None
+                isIndi = None
         continue
 
     else: #invalid index keyword pair
