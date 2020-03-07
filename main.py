@@ -12,7 +12,8 @@ from US17 import US17
 from US21 import US21
 from US10 import US10
 from US12 import US12
-
+from US29 import US29
+from US13 import US13
 #Import All Checks (User Stories)
 
 indiTable = PrettyTable()
@@ -35,6 +36,8 @@ print(famTable)
 print('\n')
 
 for fam in FamDict:
+    if(US13(fam)):
+        print("US13 Error for Family: " + str(FamDict[fam].id) + "; Children Born Too Close Together")
     if(US04(fam)):
         print("US04 Error for Family: " + str(FamDict[fam].id) + "; Marriage Occurs After Divorce")
 
@@ -68,3 +71,4 @@ for indi in IndiDict:
 
     if(US11(indi)):
         print("US11 Error for " + IndiDict[indi].name + "; Person Cannot Be Married to Two People At Once")
+
