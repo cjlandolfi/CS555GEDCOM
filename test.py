@@ -6,12 +6,16 @@ from US04 import US04
 from US06 import US06
 from US07 import US07
 from US11 import US11
+from US13 import US13
+from US14 import US14
+from US18 import US18
 from US16 import US16
 from US17 import US17
 from US21 import US21
 from US22 import US22
 from US10 import US10
 from US12 import US12
+from US29 import US29
 
 class TestAllUserStories(unittest.TestCase):
     def test_US02(self):
@@ -50,5 +54,16 @@ class TestAllUserStories(unittest.TestCase):
     def test_US22(self):
         self.assertEqual(US22(), False)
 
+    def test_US13(self):
+        self.assertEqual(US13('@F2@'), True)
+    
+    def test_US18(self):
+        self.assertEqual(US18('@I28@'), True)
+
+    def test_US14(self):
+        self.assertEqual(US14('@F8@'), True)
+
+    def test_US29(self):
+        self.assertEqual(len(US29()), 5)
 if __name__ == '__main__':
 	unittest.main()

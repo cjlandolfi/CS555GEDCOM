@@ -9,7 +9,7 @@ def US13(family):
 		dobCurrent=datetime.strptime(IndiDict[child].dob, '%d %b %Y')
 		for children in FamDict[family].children:
 			dobChildren=datetime.strptime(IndiDict[children].dob, '%d %b %Y')
-			change=dobCurrent-dobChildren
+			change=abs(dobCurrent-dobChildren)
 			if(change.days>1 and change.days<244):
 				return True
 	return False
