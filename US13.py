@@ -4,7 +4,7 @@ from datetime import datetime, date
 
 def US13(family):
 	if(FamDict[family].children=='N/A'):
-		return False
+		return False15
 	for child in FamDict[family].children:
 		dobCurrent=datetime.strptime(IndiDict[child].dob, '%d %b %Y')
 		for children in FamDict[family].children:
