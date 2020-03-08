@@ -179,6 +179,14 @@
 1 BIRT
 2 DATE 11 APR 1970
 1 FAMC @F2@
+0 @I16@ INDI
+1 NAME James /King/
+2 GIVN James
+2 SURN King
+2 _MARNM King
+1 SEX M
+1 BIRT
+2 DATE 6 SEP 2004
 0 @I18@ INDI
 1 NAME Adam /Connelley/
 2 GIVN Adam
