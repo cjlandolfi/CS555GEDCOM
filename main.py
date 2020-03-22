@@ -16,6 +16,8 @@ from US29 import US29
 from US13 import US13
 from US14 import US14
 from US18 import US18
+from US30 import US30
+from US31 import US31 
 #Import All Checks (User Stories)
 
 indiTable = PrettyTable()
@@ -38,6 +40,12 @@ print(famTable)
 print('\n')
 print('List of Deceased:')
 print(US29())
+print('\n')
+print('List of Living Married:')
+print(US30())
+print('\n')
+print('List of Living Single:')
+print(US31())
 print('\n')
 
 for err in ParserErrors:
