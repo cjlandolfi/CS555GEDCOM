@@ -297,6 +297,188 @@
 2 DATE 1 JAN 2000
 1 FAMS @F10@
 1 FAMC @F9@
+0 @I30@ INDI
+1 NAME Jane /De Guzman/
+2 GIVN Jane
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX F
+1 BIRT
+2 DATE 3 JAN 2010
+1 FAMC @F10@
+0 @I31@ INDI
+1 NAME Joshua /De Guzman/
+2 GIVN Joshua
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 JAN 2010
+1 FAMC @F10@
+0 @I32@ INDI
+1 NAME Jeffrey /De Guzman/
+2 GIVN Jeffrey
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 JAN 2010
+1 FAMC @F10@
+0 @I33@ INDI
+1 NAME Jason /De Guzman/
+2 GIVN Jason
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 JAN 2010
+1 FAMC @F10@
+0 @I34@ INDI
+1 NAME Josiah /De Guzman/
+2 GIVN Josiah
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 JAN 2010
+1 FAMC @F10@
+0 @I35@ INDI
+1 NAME Jermiah /De Guzman/
+2 GIVN Jermiah
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 JAN 2010
+1 FAMC @F10@
+0 @I36@ INDI
+1 NAME Sally /De Guzman/
+2 GIVN Sally
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX F
+1 BIRT
+2 DATE 3 MAY 2011
+1 FAMC @F10@
+0 @I37@ INDI
+1 NAME Susan /De Guzman/
+2 GIVN Susan
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX F
+1 BIRT
+2 DATE 3 MAY 2011
+1 FAMC @F10@
+0 @I38@ INDI
+1 NAME Shannon /De Guzman/
+2 GIVN Shannon
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX F
+1 BIRT
+2 DATE 3 MAY 2011
+1 FAMC @F10@
+0 @I39@ INDI
+1 NAME Samantha /De Guzman/
+2 GIVN Samantha
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX F
+1 BIRT
+2 DATE 3 MAY 2011
+1 FAMC @F10@
+0 @I40@ INDI
+1 NAME Sansa /De Guzman/
+2 GIVN Sansa
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX F
+1 BIRT
+2 DATE 3 MAY 2011
+1 FAMC @F10@
+0 @I41@ INDI
+1 NAME Marvin /De Guzman/
+2 GIVN Marvin
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 AUG 2013
+1 FAMC @F10@
+0 @I42@ INDI
+1 NAME Matthew /De Guzman/
+2 GIVN Matthew
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 AUG 2013
+1 FAMC @F10@
+0 @I43@ INDI
+1 NAME Mark /De Guzman/
+2 GIVN Mark
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 AUG 2013
+1 FAMC @F10@
+0 @I44@ INDI
+1 NAME Michael /De Guzman/
+2 GIVN Michael
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 AUG 2013
+1 FAMC @F10@
+0 @I45@ INDI
+1 NAME Mitch /De Guzman/
+2 GIVN Mitch
+2 SURN De Guzman
+2 _MARNM De Guzman
+1 SEX M
+1 BIRT
+2 DATE 3 AUG 2013
+1 FAMC @F10@
+0 @I46@ INDI
+1 NAME Sandra /Harris/
+2 GIVN Sandra
+2 SURN Harris
+2 _MARNM Harris
+1 SEX F
+1 BIRT
+2 DATE 3 AUG 1995
+1 FAMS @F11@
+0 @I47@ INDI
+1 NAME Ethan /Harris/
+2 GIVN Ethan
+2 SURN Harris
+2 _MARNM Harris
+1 SEX M
+1 BIRT
+2 DATE 3 AUG 2006
+1 FAMC @F11@
+1 FAMS @F13@
+0 @I48@ INDI
+1 NAME Linda /Meekle/
+2 GIVN Linda
+2 SURN Meekle
+2 _MARNM Meekle
+1 SEX F
+1 BIRT
+2 DATE 3 AUG 1992
+1 FAMS @F12@
+0 @I49@ INDI
+1 NAME Ethel /White/
+2 GIVN Ethel
+2 SURN White
+2 _MARNM White
+1 SEX F
+1 BIRT
+2 DATE 3 AUG 2005
+1 FAMC @F12@
+1 FAMS @F13@
 0 @F1@ FAM
 1 HUSB @I2@
 1 WIFE @I3@
@@ -372,5 +554,34 @@
 0 @F10@ FAM
 1 HUSB @I28@
 1 WIFE @I29@
+1 CHIL @I30@
+1 CHIL @I31@
+1 CHIL @I32@
+1 CHIL @I33@
+1 CHIL @I34@
+1 CHIL @I35@
+1 CHIL @I36@
+1 CHIL @I37@
+1 CHIL @I38@
+1 CHIL @I39@
+1 CHIL @I40@
+1 CHIL @I41@
+1 CHIL @I42@
+1 CHIL @I43@
+1 CHIL @I44@
+1 _CURRENT Y
+0 @F11@ FAM
+1 HUSB @I22@
+1 WIFE @I46@
+1 CHIL @I47@
+1 _CURRENT Y
+0 @F12@ FAM
+1 HUSB @I25@
+1 WIFE @I48@
+1 CHIL @I49@
+1 _CURRENT Y
+0 @F13@ FAM
+1 HUSB @I47@
+1 WIFE @I49@
 1 _CURRENT Y
 0 TRLR
