@@ -18,6 +18,8 @@ from US14 import US14
 from US18 import US18
 from US30 import US30
 from US31 import US31 
+from US15 import US15
+from US19 import US19
 #Import All Checks (User Stories)
 
 indiTable = PrettyTable()
@@ -81,6 +83,12 @@ for fam in FamDict:
 
     if(US14(fam)):
         print("US14 Annomaly for Family: " + str(FamDict[fam].id) + "; No more than five siblings should be born at same time.")
+
+    if(US15(fam)):
+        print("US15 Annomaly for Family: " + str(FamDict[fam].id) + "; Families shouldn't have 15 or more siblings.")
+
+    if(US19(fam)):
+        print("US19 Error for Family: " + str(FamDict[fam].id) + "; First cousins cannot marry")
 
 for indi in IndiDict:
     if(US07(indi)):
