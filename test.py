@@ -20,6 +20,7 @@ from US15 import US15
 from US19 import US19
 from US05 import US05
 from US08 import US08
+from US35 import US35
 
 class TestAllUserStories(unittest.TestCase):
     def test_US02(self):
@@ -82,5 +83,8 @@ class TestAllUserStories(unittest.TestCase):
     def test_US08(self):
         self.assertEqual(US08('@F5@'), True)
         
+    def test_US35(self):
+    	self.assertEqual(len(US35()), 1)
+
 if __name__ == '__main__':
 	unittest.main()
