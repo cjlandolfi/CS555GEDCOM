@@ -77,10 +77,10 @@ class TestAllUserStories(unittest.TestCase):
         self.assertEqual(len(US29()), 5)
 
     def test_US05(self):
-        self.assertEqual(US05(''), True)
+        self.assertEqual(US05('@F6@'), True)
 
     def test_US08(self):
-        self.assertEqual(US08(''), True)
+        self.assertEqual(US08('@F5@'), True)
         
 if __name__ == '__main__':
 	unittest.main()

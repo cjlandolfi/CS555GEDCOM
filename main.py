@@ -96,7 +96,7 @@ for fam in FamDict:
         print("US05 Error for Family: " + str(FamDict[fam].id) + "; Marriage must be before death")
 
     if(US08(fam)):
-    print("US08 Error for Family: " + str(FamDict[fam].id) + "; Children must be born during marriage(or up to 9 months after divorce)")
+        print("US08 Error for Family: " + str(FamDict[fam].id) + "; Children must be born during marriage(or up to 9 months after divorce)")
 
 for indi in IndiDict:
     if(US07(indi)):
