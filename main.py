@@ -20,6 +20,8 @@ from US30 import US30
 from US31 import US31 
 from US15 import US15
 from US19 import US19
+from US05 import US05
+from US08 import US08
 #Import All Checks (User Stories)
 
 indiTable = PrettyTable()
@@ -89,6 +91,12 @@ for fam in FamDict:
 
     if(US19(fam)):
         print("US19 Error for Family: " + str(FamDict[fam].id) + "; First cousins cannot marry")
+    
+    if(US05(fam)):
+        print("US05 Error for Family: " + str(FamDict[fam].id) + "; Marriage must be before death")
+
+    if(US08(fam)):
+    print("US08 Error for Family: " + str(FamDict[fam].id) + "; Children must be born during marriage(or up to 9 months after divorce)")
 
 for indi in IndiDict:
     if(US07(indi)):
