@@ -21,6 +21,8 @@ from US19 import US19
 from US05 import US05
 from US08 import US08
 from US35 import US35
+from US30 import US30
+from US31 import US31
 
 class TestAllUserStories(unittest.TestCase):
     def test_US02(self):
@@ -85,6 +87,12 @@ class TestAllUserStories(unittest.TestCase):
         
     def test_US35(self):
     	self.assertEqual(len(US35()), 1)
+    
+    def test_US30(self):
+        self.assertEqual(len(US30()), 14)
+    
+    def test_US31(self):
+        self.assertEqual(len(US31()), 31)
 
 if __name__ == '__main__':
 	unittest.main()
