@@ -25,6 +25,8 @@ from US08 import US08
 from US35 import US35
 from US36 import US36
 from US37 import US37
+from US01 import US01
+from US09 import US09
 
 #Import All Checks (User Stories)
 
@@ -111,6 +113,12 @@ for fam in FamDict:
 
     if(US08(fam)):
         print("US08 Error for Family: " + str(FamDict[fam].id) + "; Children must be born during marriage(or up to 9 months after divorce)")
+    
+    if(US01(fam)):
+        print("US01 Error for Family: " + str(FamDict[fam].id) + "; All dates must be before current date")
+    
+    if(US09(fam)):
+        print("US09 Error for Family: " + str(FamDict[fam].id) + "; Children must be born before daeth of parents")
 
 for indi in IndiDict:
     if(US07(indi)):
