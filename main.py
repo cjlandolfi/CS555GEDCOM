@@ -23,6 +23,8 @@ from US19 import US19
 from US05 import US05
 from US08 import US08
 from US35 import US35
+from US36 import US36
+from US37 import US37
 
 #Import All Checks (User Stories)
 
@@ -56,6 +58,13 @@ print('\n')
 print('List of Recent Births:')
 print(US35())
 print('\n')
+print('List of Recent Deaths:')
+print(US36())
+print('\n')
+print('List of Recent Survivors:')
+print(US37())
+print('\n')
+
 
 for err in ParserErrors:
     print(err)
