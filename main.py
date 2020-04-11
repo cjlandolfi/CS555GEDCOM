@@ -27,6 +27,7 @@ from US36 import US36
 from US37 import US37
 from US01 import US01
 from US09 import US09
+from US38 import US38
 
 #Import All Checks (User Stories)
 
@@ -40,7 +41,23 @@ for key in IndiDict:
     indiTable.add_row([key, IndiDict[key].name, IndiDict[key].gender, IndiDict[key].dob, IndiDict[key].age, IndiDict[key].alive, IndiDict[key].death, IndiDict[key].child, IndiDict[key].spouse])
 
 for key in FamDict:
-    famTable.add_row([key, FamDict[key].married, FamDict[key].divorce, FamDict[key].husbandId, FamDict[key].husbandName, FamDict[key].wifeId, FamDict[key].wifeName, FamDict[key].children])
+	if(len(FamDict[key].children)>=2):#Used to sort children in order of age
+		myChildList={}
+		x=[]
+		for child in FamDict[key].children:
+			childtag=str(child)
+			childage=IndiDict[child].age
+			myChildList.update({childtag:childage})
+		print(myChildList)
+		for m,value in sorted(myChildList.items(),key=lambda item:item[1]):
+			x.append(m)
+		
+		famTable.add_row([key, FamDict[key].married, FamDict[key].divorce, FamDict[key].husbandId, FamDict[key].husbandName, FamDict[key].wifeId, FamDict[key].wifeName, x])
+		myChildList.clear()
+		x=[]
+	else:
+		famTable.add_row([key, FamDict[key].married, FamDict[key].divorce, FamDict[key].husbandId, FamDict[key].husbandName, FamDict[key].wifeId, FamDict[key].wifeName, FamDict[key].children])
+
 
 print('Individuals')
 print(indiTable)
@@ -66,7 +83,9 @@ print('\n')
 print('List of Recent Survivors:')
 print(US37())
 print('\n')
-
+print('Upcoming Birthdays in a Month:')
+print(US38())
+print('\n')
 
 for err in ParserErrors:
     print(err)
