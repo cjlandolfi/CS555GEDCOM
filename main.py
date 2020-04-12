@@ -28,6 +28,8 @@ from US37 import US37
 from US01 import US01
 from US09 import US09
 from US38 import US38
+from US33 import US33
+from US34 import US34
 
 #Import All Checks (User Stories)
 
@@ -73,6 +75,12 @@ print(US30())
 print('\n')
 print('List of Living Single:')
 print(US31())
+print('\n')
+print('List of Orphans: ')
+print(US33())
+print('\n')
+print('List of Couples with Large Age Differences: ')
+print(US34())
 print('\n')
 print('List of Recent Births:')
 print(US35())
