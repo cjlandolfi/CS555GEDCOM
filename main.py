@@ -50,7 +50,6 @@ for key in FamDict:
 			childtag=str(child)
 			childage=IndiDict[child].age
 			myChildList.update({childtag:childage})
-		print(myChildList)
 		for m,value in sorted(myChildList.items(),key=lambda item:item[1]):
 			x.append(m)
 		
