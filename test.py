@@ -29,6 +29,8 @@ from US01 import US01
 from US09 import US09
 from US28 import US28
 from US38 import US38
+from US33 import US33
+from US34 import US34
 
 class TestAllUserStories(unittest.TestCase):
     def test_US02(self):
@@ -83,7 +85,7 @@ class TestAllUserStories(unittest.TestCase):
         self.assertEqual(US19('@F13@'), True)
 
     def test_US29(self):
-        self.assertEqual(len(US29()), 6)
+        self.assertEqual(len(US29()), 8)
 
     def test_US05(self):
         self.assertEqual(US05('@F6@'), True)
@@ -98,12 +100,12 @@ class TestAllUserStories(unittest.TestCase):
         self.assertEqual(len(US30()), 15)
     
     def test_US31(self):
-        self.assertEqual(len(US31()), 31)
+        self.assertEqual(len(US31()), 36)
 
     def test_US36(self):
         self.assertEqual(len(US36()), 1)
 
-    def test_US36(self):
+    def test_US37(self):
         self.assertEqual(len(US37()), 17)
     
     def test_US01(self):
@@ -117,6 +119,12 @@ class TestAllUserStories(unittest.TestCase):
 
     def test_US38(self):
         self.assertEqual(len(US38()), 5)
+
+    def test_US33(self):
+        self.assertEqual(len(US33()), 3)
+
+    def test_US34(self):
+        self.assertEqual(len(US34()), 4)
 
 if __name__ == '__main__':
 	unittest.main()
